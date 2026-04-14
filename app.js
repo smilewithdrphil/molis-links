@@ -3,7 +3,12 @@
   'use strict';
 
   // ── State ──
-  let favorites = JSON.parse(localStorage.getItem('molis_favorites') || '[]');
+  // Seed default favorites from pinned links on first use
+  let favorites = JSON.parse(localStorage.getItem('molis_favorites') || 'null');
+  if (favorites === null) {
+    favorites = DEFAULT_LINKS.filter(l => l.pinned).map(l => l.id);
+    localStorage.setItem('molis_favorites', JSON.stringify(favorites));
+  }
   let currentModule = '';
   let currentQuery = '';
 
@@ -18,10 +23,18 @@
   const toast         = document.getElementById('toast');
   const headerCount   = document.getElementById('headerCount');
 
+  const favCountEl    = document.getElementById('favCount');
+  const favToggle     = document.getElementById('favoritesToggle');
+
   // ── Init ──
   populateModuleFilter();
   render();
   initInstallBanner();
+
+  // Collapsible favorites
+  favToggle.addEventListener('click', () => {
+    favSection.classList.toggle('expanded');
+  });
 
   // ── Events ──
   searchInput.addEventListener('input', () => {
@@ -100,12 +113,15 @@
 
   function renderFavorites(filtered) {
     const favLinks = filtered.filter(l => favorites.includes(l.id));
+    // Sort by favorites array order
+    favLinks.sort((a, b) => favorites.indexOf(a.id) - favorites.indexOf(b.id));
     if (favLinks.length === 0) {
       favSection.classList.remove('has-items');
       favList.innerHTML = '';
       return;
     }
     favSection.classList.add('has-items');
+    favCountEl.textContent = favLinks.length;
     favList.innerHTML = '';
     favLinks.forEach(link => {
       favList.appendChild(createLessonRow(link, false));

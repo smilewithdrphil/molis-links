@@ -1,4 +1,4 @@
-const CACHE_NAME = 'molis-links-v2';
+const CACHE_NAME = 'molis-links-v3';
 const ASSETS = [
   './',
   './index.html',

@@ -150,7 +150,7 @@ const DEFAULT_LINKS = [
     "url": "https://www.moliscoaching.com/products/molis-coaching-essentials-v2-0/categories/2148793028/posts/2152117265",
     "module": "Fundamentals",
     "category": "The MLS Template",
-    "pinned": false
+    "pinned": true
   },
   {
     "id": "harvest_1776013713368_24",
@@ -446,7 +446,7 @@ const DEFAULT_LINKS = [
     "url": "https://www.moliscoaching.com/products/molis-coaching-essentials-v2-0/categories/4685094/posts/2159402715",
     "module": "3: Clinical",
     "category": "Clinical Fundamentals",
-    "pinned": true
+    "pinned": false
   },
   {
     "id": "harvest_1776013713369_68",
@@ -470,7 +470,7 @@ const DEFAULT_LINKS = [
     "url": "https://www.moliscoaching.com/products/molis-coaching-essentials-v2-0/categories/4578552/posts/15373933",
     "module": "3: Clinical",
     "category": "Elastics",
-    "pinned": false
+    "pinned": true
   },
   {
     "id": "harvest_1776013713369_71",
@@ -534,7 +534,7 @@ const DEFAULT_LINKS = [
     "url": "https://www.moliscoaching.com/products/molis-coaching-essentials-v2-0/categories/2158090305/posts/15475185",
     "module": "3: Clinical",
     "category": "Mandibular Advancement",
-    "pinned": true
+    "pinned": false
   },
   {
     "id": "harvest_1776013713369_80",
@@ -606,7 +606,7 @@ const DEFAULT_LINKS = [
     "url": "https://www.moliscoaching.com/products/molis-coaching-essentials-v2-0/categories/4578673/posts/15374390",
     "module": "4: ClinCheck Roadmap",
     "category": "Orientation",
-    "pinned": true
+    "pinned": false
   },
   {
     "id": "harvest_1776013713369_93",
@@ -614,7 +614,7 @@ const DEFAULT_LINKS = [
     "url": "https://www.moliscoaching.com/products/molis-coaching-essentials-v2-0/categories/4578673/posts/2170346788",
     "module": "4: ClinCheck Roadmap",
     "category": "Orientation",
-    "pinned": false
+    "pinned": true
   },
   {
     "id": "harvest_1776013713369_95",
@@ -622,7 +622,7 @@ const DEFAULT_LINKS = [
     "url": "https://www.moliscoaching.com/products/molis-coaching-essentials-v2-0/categories/4578694/posts/15374437",
     "module": "4: ClinCheck Roadmap",
     "category": "General ClinCheck Guidance",
-    "pinned": false
+    "pinned": true
   },
   {
     "id": "harvest_1776013713370_96",
@@ -630,7 +630,7 @@ const DEFAULT_LINKS = [
     "url": "https://www.moliscoaching.com/products/molis-coaching-essentials-v2-0/categories/4578694/posts/15374438",
     "module": "4: ClinCheck Roadmap",
     "category": "General ClinCheck Guidance",
-    "pinned": true
+    "pinned": false
   },
   {
     "id": "harvest_1776013713370_97",
@@ -710,7 +710,7 @@ const DEFAULT_LINKS = [
     "url": "https://www.moliscoaching.com/products/molis-coaching-essentials-v2-0/categories/4578694/posts/15374458",
     "module": "4: ClinCheck Roadmap",
     "category": "General ClinCheck Guidance",
-    "pinned": false
+    "pinned": true
   },
   {
     "id": "harvest_1776013713370_107",
@@ -806,7 +806,7 @@ const DEFAULT_LINKS = [
     "url": "https://www.moliscoaching.com/products/molis-coaching-essentials-v2-0/categories/4578697/posts/2186132244",
     "module": "4: ClinCheck Roadmap",
     "category": "Interproximal Reduction (IPR)",
-    "pinned": true
+    "pinned": false
   },
   {
     "id": "harvest_1776013713370_119",
@@ -870,7 +870,7 @@ const DEFAULT_LINKS = [
     "url": "https://www.moliscoaching.com/products/molis-coaching-essentials-v2-0/categories/4578712/posts/15374528",
     "module": "4: ClinCheck Roadmap",
     "category": "Malocclusions",
-    "pinned": false
+    "pinned": true
   },
   {
     "id": "harvest_1776013713370_127",
@@ -982,7 +982,7 @@ const DEFAULT_LINKS = [
     "url": "https://www.moliscoaching.com/products/molis-coaching-essentials-v2-0/categories/4578712/posts/15374598",
     "module": "4: ClinCheck Roadmap",
     "category": "Malocclusions",
-    "pinned": false
+    "pinned": true
   },
   {
     "id": "harvest_1776013713370_141",
@@ -1054,7 +1054,7 @@ const DEFAULT_LINKS = [
     "url": "https://www.moliscoaching.com/products/molis-coaching-essentials-v2-0/categories/2147605115/posts/15972945",
     "module": "Deep Dives",
     "category": "Community",
-    "pinned": false
+    "pinned": true
   },
   {
     "id": "harvest_1776013713370_155",
@@ -1654,7 +1654,7 @@ const DEFAULT_LINKS = [
     "url": "https://www.moliscoaching.com/products/molis-coaching-essentials-v2-0/categories/4608658/posts/2165862502",
     "module": "Case of the Month",
     "category": "Case of the Month",
-    "pinned": false
+    "pinned": true
   },
   {
     "id": "harvest_1776013713372_233",
