@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <rect width="512" height="512" rx="64" fill="#000"/>
+  <g transform="translate(256,256)" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round">
+    <!-- outer ring -->
+    <circle r="180" stroke-width="14"/>
+    <!-- inner ring -->
+    <circle r="52" stroke-width="10"/>
+    <!-- 8 spokes -->
+    <line x1="0" y1="-52" x2="0" y2="-180"/>
+    <line x1="36.77" y1="-36.77" x2="127.28" y2="-127.28"/>
+    <line x1="52" y1="0" x2="180" y2="0"/>
+    <line x1="36.77" y1="36.77" x2="127.28" y2="127.28"/>
+    <line x1="0" y1="52" x2="0" y2="180"/>
+    <line x1="-36.77" y1="36.77" x2="-127.28" y2="127.28"/>
+    <line x1="-52" y1="0" x2="-180" y2="0"/>
+    <line x1="-36.77" y1="-36.77" x2="-127.28" y2="-127.28"/>
+    <!-- 8 handle pegs on outer ring -->
+    <circle cx="0" cy="-180" r="20" fill="#fff" stroke="none"/>
+    <circle cx="127.28" cy="-127.28" r="20" fill="#fff" stroke="none"/>
+    <circle cx="180" cy="0" r="20" fill="#fff" stroke="none"/>
+    <circle cx="127.28" cy="127.28" r="20" fill="#fff" stroke="none"/>
+    <circle cx="0" cy="180" r="20" fill="#fff" stroke="none"/>
+    <circle cx="-127.28" cy="127.28" r="20" fill="#fff" stroke="none"/>
+    <circle cx="-180" cy="0" r="20" fill="#fff" stroke="none"/>
+    <circle cx="-127.28" cy="-127.28" r="20" fill="#fff" stroke="none"/>
+  </g>
+</svg>

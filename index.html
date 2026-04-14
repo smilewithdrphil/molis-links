@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#000000">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Molis Links">
+  <link rel="apple-touch-icon" href="./icons/icon-192.svg">
+  <link rel="manifest" href="./manifest.json">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <title>Molis Links</title>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <svg class="header-icon" viewBox="0 0 192 192" fill="none">
+      <g transform="translate(96,96)" stroke="#fff" stroke-width="6" stroke-linecap="round">
+        <circle r="68" stroke-width="6" fill="none"/>
+        <circle r="20" stroke-width="4" fill="none"/>
+        <line x1="0" y1="-20" x2="0" y2="-68"/>
+        <line x1="14.14" y1="-14.14" x2="48.08" y2="-48.08"/>
+        <line x1="20" y1="0" x2="68" y2="0"/>
+        <line x1="14.14" y1="14.14" x2="48.08" y2="48.08"/>
+        <line x1="0" y1="20" x2="0" y2="68"/>
+        <line x1="-14.14" y1="14.14" x2="-48.08" y2="48.08"/>
+        <line x1="-20" y1="0" x2="-68" y2="0"/>
+        <line x1="-14.14" y1="-14.14" x2="-48.08" y2="-48.08"/>
+        <circle cx="0" cy="-68" r="8" fill="#fff" stroke="none"/>
+        <circle cx="48.08" cy="-48.08" r="8" fill="#fff" stroke="none"/>
+        <circle cx="68" cy="0" r="8" fill="#fff" stroke="none"/>
+        <circle cx="48.08" cy="48.08" r="8" fill="#fff" stroke="none"/>
+        <circle cx="0" cy="68" r="8" fill="#fff" stroke="none"/>
+        <circle cx="-48.08" cy="48.08" r="8" fill="#fff" stroke="none"/>
+        <circle cx="-68" cy="0" r="8" fill="#fff" stroke="none"/>
+        <circle cx="-48.08" cy="-48.08" r="8" fill="#fff" stroke="none"/>
+      </g>
+    </svg>
+    <h1>Molis Links</h1>
+    <span class="header-count" id="headerCount"></span>
+  </header>
+
+  <!-- Search -->
+  <div class="search-bar">
+    <div class="search-input-wrap">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="11" cy="11" r="8"></circle>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+      </svg>
+      <input type="text" id="searchInput" class="search-input" placeholder="Search 234 lessons..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+      <button id="searchClear" class="search-clear">&times;</button>
+    </div>
+  </div>
+
+  <!-- Module filter -->
+  <div class="filter-bar">
+    <select id="moduleSelect" class="module-select">
+      <option value="">All Modules</option>
+    </select>
+  </div>
+
+  <!-- Favorites -->
+  <div id="favoritesSection" class="favorites-section">
+    <div class="favorites-header">
+      <svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+      Favorites
+    </div>
+    <div id="favoritesList" class="favorites-list"></div>
+  </div>
+
+  <!-- Lesson list -->
+  <div id="lessonList"></div>
+
+  <!-- Empty state -->
+  <div id="emptyState" class="empty-state">No lessons found.</div>
+
+  <!-- Toast -->
+  <div id="toast" class="toast"></div>
+
+  <!-- Install banner -->
+  <div id="installBanner" class="install-banner">
+    <span class="install-banner-text">Add to Home Screen for quick access</span>
+    <button id="installDismiss" class="install-banner-dismiss">&times;</button>
+  </div>
+
+  <!-- Scripts -->
+  <script src="./links-data.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
