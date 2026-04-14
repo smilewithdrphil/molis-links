@@ -249,8 +249,8 @@
       showToast('Copied!');
     });
 
-    row.appendChild(name);
     row.appendChild(star);
+    row.appendChild(name);
     row.appendChild(copyIcon);
     return row;
   }
