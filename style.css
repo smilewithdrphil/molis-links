@@ -186,39 +186,45 @@ body {
 
 /* === Module groups === */
 .module-group {
-  border-bottom: 1px solid var(--gray-200);
+  border-bottom: none;
 }
 
 .module-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 12px 16px;
+  padding: 10px 16px;
+  margin: 4px 8px 0;
   cursor: pointer;
   user-select: none;
   -webkit-user-select: none;
+  background: var(--black);
+  color: var(--white);
+  border-radius: 6px;
 }
 
 .module-header:active {
-  background: var(--gray-100);
+  background: #222;
 }
 
 .module-name {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 700;
-  color: var(--black);
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .module-count {
-  font-size: 11px;
+  font-size: 10px;
   color: var(--gray-400);
   font-weight: 400;
   margin-left: 6px;
 }
 
 .module-chevron {
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 16px;
   color: var(--gray-400);
   transition: transform 0.2s ease;
   flex-shrink: 0;
@@ -230,7 +236,7 @@ body {
 
 .module-body {
   display: none;
-  padding-bottom: 8px;
+  padding: 0 8px 4px;
 }
 
 .module-group.expanded .module-body {
@@ -239,12 +245,15 @@ body {
 
 /* === Section label === */
 .section-label {
-  padding: 6px 16px 4px;
-  font-size: 11px;
+  padding: 6px 12px 3px;
+  margin-top: 4px;
+  font-size: 10px;
   font-weight: 600;
   color: var(--gray-500);
   text-transform: uppercase;
   letter-spacing: 0.4px;
+  background: var(--gray-100);
+  border-radius: 4px;
 }
 
 /* === Lesson row === */
@@ -252,9 +261,14 @@ body {
   display: flex;
   align-items: center;
   gap: 8px;
-  padding: 9px 16px;
+  padding: 10px 12px;
   cursor: pointer;
   transition: background 0.1s;
+  border-bottom: 1px solid var(--gray-100);
+}
+
+.lesson-row:last-child {
+  border-bottom: none;
 }
 
 .lesson-row:active {
@@ -267,7 +281,7 @@ body {
 
 .lesson-name {
   flex: 1;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 600;
   color: var(--black);
   line-height: 1.35;
